@@ -14,3 +14,10 @@ docker run -it -p 8501:8501 re_url:v1 /bin/bash
 ```
 nohup python3.8 /data/reset_url/re_url.py >/dev/null 2>log &
 ```
+
+## 測試
+瀏覽器訪問
+```
+ip:8501/-L5mcFQ-WGtzIzexktqkKw$II$Y$.png
+```
+如可以正常訪問到圖片，代表已部署成功
