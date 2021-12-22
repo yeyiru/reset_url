@@ -1,6 +1,7 @@
 FROM ubuntu:latest
 
-RUN apt update && mkdir /data && cd /data
+RUN apt update && mkdir /data 
+WORKDIR /data
 
 RUN apt install -y python3.8 && apt-get install -y git && apt-get install -y pip
 
