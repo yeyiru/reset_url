@@ -10,4 +10,4 @@ docker buildx build --platform linux/amd64,linux/arm64 -t dkr.tw/sgis/reset_url 
 ## 執行
 # docker run -it --rm -v $PWD/src:/data dkr.sgis.tw/reset_url python3 re_url.py
 docker pull dkr.tw/sigs/reset_url
-docker run -it -p 8501:8501 --rm -v $PWD/src:/data dkr.tw/sgis/reset_url python3 re_url.py
+docker run -it -p 8501:8501 -v $PWD/src:/data dkr.tw/sgis/reset_url nohup python3 re_url.py >/dev/null 2>log &
