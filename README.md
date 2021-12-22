@@ -2,7 +2,7 @@
 
 ## Build Dcoker
 ```
-docker built -t re_url:v1 Dockerfile .
+docker build -t re_url:v1 -f Dockerfile .
 ```
 ## 進入docker後運行
 ```
